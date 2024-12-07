@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web4U: Tutoriales y ejemplos de HTML, SVG y CSS.">
+    <title>Web4U - Ejemplos de HTML</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Ejemplos de HTML</h1>
+        <p>Explora los fundamentos de HTML con ejemplos detallados y tutoriales.</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index_es.html" title="Volver al inicio">Inicio</a></li>
+            <li><a href="svg_examples_es.html" title="Aprende sobre SVG">SVG</a></li>
+            <li><a href="css_examples_es.html" title="Aprende sobre CSS">CSS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>Introducción a HTML</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web. Es la columna vertebral de cualquier sitio web, proporcionando la estructura y contenido de una página web. Esta sección te guiará a través de los conceptos básicos de HTML con ejemplos detallados.</p>
+        </section>
+
+        <!-- Estructura Básica de HTML -->
+        <section id="basic_structure">
+            <h2>Estructura básica de un documento HTML</h2>
+            <p>Todo documento HTML comienza con la declaración del tipo de documento, seguida de las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;. Aquí tienes un ejemplo sencillo de la estructura:</p>
+
+            <h3>Ejemplo de estructura de un documento HTML:</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Mi primera página web&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;¡Hola, Mundo!&lt;/h1&gt;
+        &lt;p&gt;Bienvenido al aprendizaje de HTML.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Este sencillo documento HTML muestra un encabezado (&lt;h1&gt;) y un párrafo (&lt;p&gt;). La sección &lt;head&gt; contiene la meta-información sobre el documento, mientras que la sección &lt;body&gt; contiene el contenido que se mostrará en la página web.</p>
+            <img src="../images/html_structure_example.png" alt="Ejemplo de estructura básica de HTML" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Títulos y párrafos -->
+        <section id="headings_paragraphs">
+            <h2>Títulos y párrafos</h2>
+            <p>HTML ofrece seis niveles de títulos, desde &lt;h1&gt; hasta &lt;h6&gt;, donde &lt;h1&gt; es el más grande e importante, y &lt;h6&gt; el más pequeño. Usa los títulos para estructurar tu contenido jerárquicamente.</p>
+            <p>Los párrafos se definen usando la etiqueta &lt;p&gt;. Aquí tienes un ejemplo de cómo usar títulos y párrafos:</p>
+
+            <h3>Ejemplo de títulos y párrafos:</h3>
+            <pre><code>&lt;h1&gt;Este es un título 1&lt;/h1&gt;
+&lt;h2&gt;Este es un título 2&lt;/h2&gt;
+&lt;p&gt;Este es un párrafo de texto. HTML ayuda a estructurar y dar estilo al contenido de una página web.&lt;/p&gt;</code></pre>
+            <p>En el ejemplo anterior, el título &lt;h1&gt; define el título principal de la página, mientras que el párrafo &lt;p&gt; proporciona información adicional.</p>
+            <img src="../images/headings_paragraph_example.png" alt="Ejemplo de títulos y párrafos" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Listas -->
+        <section id="lists">
+            <h2>Listas en HTML</h2>
+            <p>HTML admite dos tipos de listas: listas ordenadas y listas desordenadas.</p>
+
+            <h3>Lista desordenada:</h3>
+            <p>Una lista desordenada es una lista en la que el orden de los elementos no importa. Se define con la etiqueta &lt;ul&gt;, y cada elemento de la lista se envuelve en una etiqueta &lt;li&gt;.</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>Lista ordenada:</h3>
+            <p>Una lista ordenada es una lista en la que el orden de los elementos sí importa. Se define con la etiqueta &lt;ol&gt;, y cada elemento también se envuelve en una etiqueta &lt;li&gt;.</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <img src="../images/lists_example.png" alt="Ejemplo de listas" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Enlaces -->
+        <section id="links">
+            <h2>Enlaces en HTML</h2>
+            <p>Los enlaces se definen con la etiqueta &lt;a&gt;. Usa el atributo href para especificar la URL de la página a la que debe ir el enlace.</p>
+
+            <h3>Ejemplo de enlaces:</h3>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visita Example&lt;/a&gt;</code></pre>
+            <p>El enlace anterior abrirá el sitio web <a href="https://www.example.com" target="_blank">Example</a> cuando se haga clic.</p>
+            <img src="../images/links_example.png" alt="Ejemplo de enlaces" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Imágenes -->
+        <section id="images">
+            <h2>Imágenes en HTML</h2>
+            <p>Las imágenes se añaden utilizando la etiqueta &lt;img&gt;. El atributo src especifica la ruta del archivo de imagen, y el atributo alt proporciona un texto alternativo para la imagen.</p>
+
+            <h3>Ejemplo de una imagen:</h3>
+            <pre><code>&lt;img src="image.jpg" alt="Una descripción de la imagen"&gt;</code></pre>
+            <p>En el ejemplo anterior, la imagen con la ruta "image.jpg" se mostrará en la página web. El texto alternativo ayuda a los usuarios con lectores de pantalla o cuando la imagen no puede cargarse.</p>
+            <img src="../images/image_example.png" alt="Ejemplo de imagen" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Tablas -->
+        <section id="tables">
+            <h2>Tablas en HTML</h2>
+            <p>Las tablas en HTML se definen con la etiqueta &lt;table&gt;. Dentro de la tabla, usa &lt;tr&gt; para las filas, &lt;th&gt; para las celdas de encabezado y &lt;td&gt; para las celdas de datos.</p>
+
+            <h3>Ejemplo de una tabla:</h3>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Juan&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ana&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <p>Esta tabla muestra una lista de nombres y sus respectivas edades.</p>
+            <img src="../images/table_example.png" alt="Ejemplo de tabla" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Formularios -->
+        <section id="forms">
+            <h2>Formularios en HTML</h2>
+            <p>Los formularios se utilizan para recopilar datos del usuario. La estructura básica de un formulario incluye la etiqueta &lt;form&gt;, junto con varios elementos de entrada como &lt;input&gt;, &lt;textarea&gt; y &lt;button&gt;.</p>
+
+            <h3>Ejemplo de un formulario:</h3>
+            <pre><code>&lt;form action="submit_form.php" method="POST"&gt;
+    &lt;label for="name"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Correo electrónico:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <p>Este formulario permite a los usuarios introducir su nombre y correo electrónico y enviar los datos al servidor para su procesamiento.</p>
+            <img src="../images/form_example.png" alt="Ejemplo de formulario" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+    </main>
+    
+    <!-- Recursos adicionales -->
+    <section id="enlaces">
+        <h2>Recursos adicionales de HTML</h2>
+        <p>Aprende más sobre HTML y sus capacidades:</p>
+        <a href="https://www.w3schools.com/html/default.asp">Enlace a W3Schools</a><br>
+        <a href="../pdf/html_examples_es.pdf" download="html_example">Descargar Ejemplo HTML en PDF</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Web4U. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

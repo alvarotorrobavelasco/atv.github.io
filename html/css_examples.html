@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Examples: Learn how to use CSS to style your web pages.">
+    <title>Web4U - CSS Examples</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>CSS Examples</h1>
+        <p>Learn how to style your web pages using CSS (Cascading Style Sheets).</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../index.html" title="Back to Home">Home</a></li>
+            <li><a href="html_examples.html" title="Learn about HTML">HTML</a></li>
+            <li><a href="svg_examples.html" title="Learn about SVG">SVG</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML or XML. CSS controls the layout, colors, fonts, spacing, and many other visual aspects of web pages.</p>
+        </section>
+
+        <!-- Ejemplos de CSS -->
+        <section id="basic_examples">
+            <h2>Basic CSS Examples</h2>
+
+            <h3>Basic Styling</h3>
+            <p>This example shows how to apply basic styles to elements like background color, font family, and text color:</p>
+            <pre><code>body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #FF5733;
+    text-align: center;
+}</code></pre>
+            <img src="../images/basic_styling_example.png" alt="Basic Styling Example" class="example-image"> <!-- Imagen de ejemplo -->
+
+            <h3>Box Model</h3>
+            <p>The CSS box model defines the rectangular area around an element, consisting of margins, borders, padding, and the actual content. Here's an example:</p>
+            <pre><code>div {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px;
+    background-color: lightblue;
+}</code></pre>
+
+            <h3>Flexbox</h3>
+            <p>Flexbox is a CSS layout model that allows you to design responsive and flexible layouts. Here's an example:</p>
+            <pre><code>div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.item {
+    width: 30%;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+
+            <h3>Grid Layout</h3>
+            <p>CSS Grid Layout is a powerful two-dimensional layout system. Here's an example:</p>
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+
+            <h3>Hover Effects</h3>
+            <p>CSS allows you to create interactive effects like hover. Here's an example that changes the background color of a button when hovered:</p>
+            <pre><code>button:hover {
+    background-color: #FF5733;
+    color: white;
+    cursor: pointer;
+}</code></pre>
+        </section>
+
+        <!-- Recursos adicionales -->
+        <section id="resources">
+            <h2>Additional CSS Resources</h2>
+            <p>Learn more about CSS with the following resources:</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a><br>
+                <a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS Tutorials</a><br>
+                <a href="../pdf/css_examples.pdf" download="html_example">Download Example CSS in PDF</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Web4U. All rights reserved.</p>
+    </footer>
+</body>
+</html>

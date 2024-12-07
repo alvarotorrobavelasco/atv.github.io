@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SVG Examples: Learn how to use SVG to create scalable vector graphics.">
+    <title>Web4U - SVG Examples</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>SVG Examples</h1>
+        <p>Learn how to create scalable vector graphics using SVG (Scalable Vector Graphics).</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../index.html" title="Back to Home">Home</a></li>
+            <li><a href="html_examples.html" title="Learn about HTML">HTML</a></li>
+            <li><a href="css_examples.html" title="Learn about CSS">CSS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>Introduction to SVG</h2>
+            <p>SVG (Scalable Vector Graphics) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. Unlike raster graphics, SVG images can be scaled to any size without losing quality, making them ideal for high-resolution displays.</p>
+        </section>
+
+        <!-- Ejemplos Básicos -->
+        <section id="basic_examples">
+            <h2>Basic SVG Examples</h2>
+
+            <h3>SVG Circle Example</h3>
+            <p>This example shows how to draw a circle in SVG.</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;circle cx="100" cy="100" r="80" stroke="black" stroke-width="4" fill="red" /&gt;
+&lt;/svg&gt;</code></pre>
+            <p>The above example creates a circle with a radius of 80px, positioned at (100, 100) inside an SVG canvas. The stroke is black, and the fill is red.</p>
+            <img src="../images/svg_circle_example.png" alt="SVG Circle Example" class="example-image"> <!-- Imagen de ejemplo -->
+
+            <h3>SVG Rectangle Example</h3>
+            <p>Here's how you can create a rectangle in SVG:</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;rect width="150" height="150" style="fill:blue;stroke:black;stroke-width:5;" /&gt;
+&lt;/svg&gt;</code></pre>
+            <p>The &lt;rect&gt; element defines the rectangle. The width and height define the size, and the style defines the fill color and stroke (border) of the rectangle.</p>
+            <img src="../images/svg_rectangle_example.png" alt="SVG Rectangle Example" class="example-image"> <!-- Imagen de ejemplo -->
+
+            <h3>SVG Line Example</h3>
+            <p>Here's an example of a line in SVG:</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;line x1="10" y1="10" x2="200" y2="200" stroke="black" stroke-width="2" /&gt;
+&lt;/svg&gt;</code></pre>
+            <p>This example draws a diagonal line from the point (10,10) to (200,200). The stroke is black, and the line thickness is 2px.</p>
+            <img src="../images/svg_line_example.png" alt="SVG Line Example" class="example-image"> <!-- Imagen de ejemplo -->
+
+            <h3>SVG Text Example</h3>
+            <p>You can also add text to your SVG graphics. Here's an example:</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;text x="50" y="100" font-size="30" fill="black"&gt;Hello SVG!&lt;/text&gt;
+&lt;/svg&gt;</code></pre>
+            <p>This example places the text "Hello SVG!" at coordinates (50, 100) with a font size of 30px and a black color.</p>
+            <img src="../images/svg_text_example.png" alt="SVG Text Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Formas y caminos -->
+        <section id="shapes_and_paths">
+            <h2>Shapes and Paths in SVG</h2>
+
+            <h3>SVG Path Example</h3>
+            <p>Paths are very powerful in SVG and can be used to create complex shapes. Here's an example of a simple path:</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" stroke-width="2" fill="transparent" /&gt;
+&lt;/svg&gt;</code></pre>
+            <p>This path starts at (10, 80), curves to (40, 10), and then continues to another curve to (95, 80) with smooth curves using the "S" command.</p>
+            <img src="../images/svg_path_example.png" alt="SVG Path Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Animación en SVG -->
+        <section id="animation">
+            <h2>Animating SVG Elements</h2>
+            <p>SVG allows you to animate shapes using the &lt;animate&gt; tag or CSS animations. Here's an example that animates a circle:</p>
+            <pre><code>&lt;svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;circle cx="50" cy="50" r="40" fill="blue"&gt;
+        &lt;animate attributeName="cx" from="50" to="150" dur="2s" repeatCount="indefinite" /&gt;
+    &lt;/circle&gt;
+&lt;/svg&gt;</code></pre>
+            <p>This example animates the center (cx) of the circle from 50 to 150 over 2 seconds, and it repeats indefinitely.</p>
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" fill="blue">
+                    <animate attributeName="cx" from="50" to="150" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </section>
+
+        <!-- Recursos adicionales -->
+        <section id="resources">
+            <h2>Additional SVG Resources</h2>
+            <p>Learn more about SVG and its capabilities:</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">MDN Web Docs - SVG</a><br>
+                <a href="https://www.svgviewer.dev/" target="_blank">SVG Viewer</a><br>
+                <a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank">W3C SVG Specification</a><br>
+            <a href="../pdf/svg_examples.pdf" download="html_example">Download Example SVG in PDF</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Web4U. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Examples: Learn HTML with detailed examples and explanations.">
+    <title>Web4U - HTML Examples</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>HTML Examples</h1>
+        <p>Explore the fundamentals of HTML with detailed examples and tutorials.</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../index.html" title="Back to Home">Home</a></li>
+            <li><a href="svg_examples.html" title="Learn about SVG">SVG</a></li>
+            <li><a href="css_examples.html" title="Learn about CSS">CSS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and design web pages. It is the backbone of any website, providing the structure and content of a web page. This section will guide you through the basics of HTML with detailed examples.</p>
+        </section>
+
+        <!-- Estructura Básica de HTML -->
+        <section id="basic_structure">
+            <h2>Basic Structure of an HTML Document</h2>
+            <p>Every HTML document starts with the declaration of the document type, followed by the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags. Here's a simple example of the structure:</p>
+
+            <h3>HTML Document Structure Example:</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;Welcome to learning HTML.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>This simple HTML document displays a heading (&lt;h1&gt;) and a paragraph (&lt;p&gt;). The &lt;head&gt; section contains meta-information about the document, while the &lt;body&gt; section contains the content that will be displayed on the webpage.</p>
+            <img src="../images/html_structure_example.png" alt="Basic HTML Structure Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Títulos y párrafos -->
+        <section id="headings_paragraphs">
+            <h2>Headings and Paragraphs</h2>
+            <p>HTML offers six levels of headings, from &lt;h1&gt; to &lt;h6&gt;, where &lt;h1&gt; is the largest and most important, and &lt;h6&gt; is the smallest. Use headings to structure your content hierarchically.</p>
+            <p>Paragraphs are defined using the &lt;p&gt; tag. Here's an example of how to use headings and paragraphs:</p>
+
+            <h3>Example of Headings and Paragraphs:</h3>
+            <pre><code>&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text. HTML helps to structure and style the content of a web page.&lt;/p&gt;</code></pre>
+            <p>In the example above, the heading &lt;h1&gt; defines the main title of the page, while the paragraph &lt;p&gt; provides additional information.</p>
+            <img src="../images/headings_paragraph_example.png" alt="Headings and Paragraphs Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Listas -->
+        <section id="lists">
+            <h2>Lists in HTML</h2>
+            <p>HTML supports two types of lists: ordered lists and unordered lists.</p>
+
+            <h3>Unordered List:</h3>
+            <p>An unordered list is a list where the order of items does not matter. It is defined with the &lt;ul&gt; tag, and each item inside the list is wrapped in a &lt;li&gt; tag.</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>Ordered List:</h3>
+            <p>An ordered list is a list where the order of items matters. It is defined with the &lt;ol&gt; tag, and each item is also wrapped in a &lt;li&gt; tag.</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <img src="../images/lists_example.png" alt="Lists Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Enlaces -->
+        <section id="links">
+            <h2>Links in HTML</h2>
+            <p>Links are defined with the &lt;a&gt; tag. Use the href attribute to specify the URL of the page the link should go to.</p>
+
+            <h3>Example of Links:</h3>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+            <p>The above link will open the website <a href="https://www.example.com" target="_blank">Example</a> when clicked.</p>
+            <img src="../images/links_example.png" alt="Links Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Imágenes -->
+        <section id="images">
+            <h2>Images in HTML</h2>
+            <p>Images are added using the &lt;img&gt; tag. The src attribute specifies the path to the image file, and the alt attribute provides alternative text for the image.</p>
+
+            <h3>Example of an Image:</h3>
+            <pre><code>&lt;img src="image.jpg" alt="A description of the image"&gt;</code></pre>
+            <p>In the example above, the image with the file path "image.jpg" will be displayed on the webpage. The alt text helps users with screen readers or when the image cannot be loaded.</p>
+            <img src="../images/image_example.png" alt="Image Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Tablas -->
+        <section id="tables">
+            <h2>Tables in HTML</h2>
+            <p>HTML tables are defined using the &lt;table&gt; tag. Inside the table, use &lt;tr&gt; for rows, &lt;th&gt; for header cells, and &lt;td&gt; for data cells.</p>
+
+            <h3>Example of a Table:</h3>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <p>This table shows a list of names and their corresponding ages.</p>
+            <img src="../images/table_example.png" alt="Table Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+        <!-- Formularios -->
+        <section id="forms">
+            <h2>Forms in HTML</h2>
+            <p>Forms are used to collect input from users. The basic structure of a form involves the &lt;form&gt; tag, along with various input elements like &lt;input&gt;, &lt;textarea&gt;, and &lt;button&gt;.</p>
+
+            <h3>Example of a Form:</h3>
+            <pre><code>&lt;form action="submit_form.php" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <p>This form allows users to input their name and email and submit the data to the server for processing.</p>
+            <img src="../images/form_example.png" alt="Form Example" class="example-image"> <!-- Imagen de ejemplo -->
+        </section>
+
+    </main>
+     <!-- Enlaces -->
+    <section id="enlaces">
+        <h2>Additional HTML Resources</h2>
+        <p>Learn more about HTML and its capabilities:</p>
+        <a href="https://www.w3schools.com/html/default.asp">Enlace W3Schools</a><br>
+        <a href="../pdf/html_examples.pdf" download="html_example">Download Example HTML in PDF</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Web4U. All rights reserved.</p>
+    </footer>
+</body>
+</html>

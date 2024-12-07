@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplos de CSS: Aprende cómo usar CSS para dar estilo a tus páginas web.">
+    <title>Web4U - Ejemplos de CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Ejemplos de CSS</h1>
+        <p>Aprende cómo dar estilo a tus páginas web usando CSS (Hojas de Estilo en Cascada).</p>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index_es.html" title="Volver al inicio">Inicio</a></li>
+            <li><a href="html_examples_es.html" title="Aprende sobre HTML">HTML</a></li>
+            <li><a href="svg_examples_es.html" title="Aprende sobre SVG">SVG</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section id="intro">
+            <h2>Introducción a CSS</h2>
+            <p>CSS (Hojas de Estilo en Cascada) es un lenguaje de hojas de estilo usado para describir la presentación de un documento escrito en HTML o XML. CSS controla la disposición, colores, fuentes, espaciado y muchos otros aspectos visuales de las páginas web.</p>
+        </section>
+
+        <!-- Ejemplos de CSS -->
+        <section id="basic_examples">
+            <h2>Ejemplos Básicos de CSS</h2>
+
+            <h3>Estilo Básico</h3>
+            <p>Este ejemplo muestra cómo aplicar estilos básicos a elementos como el color de fondo, la familia de fuentes y el color del texto:</p>
+            <pre><code>body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #FF5733;
+    text-align: center;
+}</code></pre>
+            <img src="../images/basic_styling_example.png" alt="Ejemplo de Estilo Básico" class="example-image"> <!-- Imagen de ejemplo -->
+
+            <h3>Modelo de Caja</h3>
+            <p>El modelo de caja de CSS define el área rectangular alrededor de un elemento, compuesto por márgenes, bordes, relleno y el contenido real. Aquí tienes un ejemplo:</p>
+            <pre><code>div {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px;
+    background-color: lightblue;
+}</code></pre>
+
+            <h3>Flexbox</h3>
+            <p>Flexbox es un modelo de disposición de CSS que permite diseñar disposiciones flexibles y adaptativas. Aquí tienes un ejemplo:</p>
+            <pre><code>div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.item {
+    width: 30%;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+
+            <h3>Disposición en Rejilla</h3>
+            <p>CSS Grid Layout es un sistema de disposición bidimensional poderoso. Aquí tienes un ejemplo:</p>
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+
+            <h3>Efectos Hover</h3>
+            <p>CSS permite crear efectos interactivos como el hover. Aquí tienes un ejemplo que cambia el color de fondo de un botón al pasar el ratón sobre él:</p>
+            <pre><code>button:hover {
+    background-color: #FF5733;
+    color: white;
+    cursor: pointer;
+}</code></pre>
+        </section>
+
+        <!-- Recursos adicionales -->
+        <section id="resources">
+            <h2>Recursos adicionales sobre CSS</h2>
+            <p>Aprende más sobre CSS con los siguientes recursos:</p>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a><br>
+                <a href="https://www.w3schools.com/css/" target="_blank">W3Schools - Tutoriales de CSS</a><br>
+                <a href="../pdf/css_examples_es.pdf" download="html_example">Descargar Ejemplo CSS en PDF</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Web4U. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

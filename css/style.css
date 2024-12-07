@@ -1,0 +1,198 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para las imágenes */
+img.example-image {
+    width: 300px;   /* Tamaño fijo para el ancho */
+    height: auto;   /* Mantiene las proporciones de la imagen */
+    display: block; /* Asegura que las imágenes se muestren como bloque */
+    margin: 0 auto; /* Centra las imágenes en la página */
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro para toda la página */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #FF5733; /* Fondo rojo */
+    color: white;
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Fixed Navigation below Header */
+nav {
+    background-color: #333; /* Fondo gris oscuro para la barra de navegación */
+    padding: 1rem;
+    text-align: center;
+    top: 8rem; /* Ajustado para moverla más abajo */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que se quede encima de otros elementos */
+}
+
+/* Content Padding to avoid overlapping */
+main {
+    flex-grow: 1;
+    padding: 6rem 2rem 2rem; /* Agrega suficiente padding arriba para que el contenido no quede cubierto por la barra */
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+    background-color: #e0e0e0; /* Fondo gris claro similar al fondo del encabezado y pie de página */
+    color: black; /* Color de texto negro para buen contraste */
+    padding: 2rem; /* Espaciado interno */
+}
+
+h2 {
+    color: #FF5733; /* Rojo */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FF5733; /* Rojo */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e04b2c; /* Rojo más oscuro */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #FF5733; /* Rojo */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Selector de idioma */
+.language-selector {
+    display: flex;
+    justify-content: flex-end;  /* Alinea el selector al final */
+    margin-top: 0; /* Elimina el margen superior */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    background-color: #FF5733;  /* Fondo rojo */
+}
+
+.language-selector a {
+    font-size: 16px;
+    color: white; /* Cambié el color del texto a blanco para mejor contraste */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.language-selector a:hover {
+    color: #333;  /* Color oscuro al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Languages Section */
+#languages .thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#languages .thumbnails a {
+    text-align: center;
+    width: 30%;
+    min-width: 120px;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#languages .thumbnails a:hover {
+    transform: scale(1.1);
+    background-color:#e04b2c ;
+}
+
+#languages .thumbnails img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+#languages .thumbnails a span {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #languages .thumbnails a {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        font-size: 1rem;
+    }
+
+    #languages .thumbnails a {
+        width: 100%;
+    }
+}
